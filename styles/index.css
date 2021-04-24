@@ -34,6 +34,7 @@ h2{
     margin-top: 0vh;
     margin-bottom: 0vh;
     text-align: center;
+    text-shadow: 5px 5px 5px black;
 }
 label{
     font-size: 5vh;
@@ -192,18 +193,15 @@ button:hover{
         
         0%{box-shadow: 0px 0px 10px black;
             height: 45vw;
-            width: 45vw;
-            /* position: absolute;} */}
+            width: 45vw;}
             
         50%{box-shadow: 0px 0px 28px black;
             height: 48vw;
             width: 48vw;
-            /* position: absolute; */
             }
         100%{box-shadow: 0px 0px 10px black;
         height: 45vw;
-        height: 45vw;
-        /* position: absolute;} */}
+        height: 45vw;}
     }
 }
 
@@ -231,11 +229,11 @@ p{
 }
 .span-grow{
     animation-name: make-text-grow;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .span-shrink{
     animation-name: make-text-shrink;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 span{
     
