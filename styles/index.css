@@ -171,7 +171,7 @@ button:hover{
 }
 @keyframes button-glow{
     0%{box-shadow: 0vh 0vh 0vh #eeebdd;}
-    50%{box-shadow: 0vh 0vh 2vh #eeebdd;}
+    50%{box-shadow: 0vh 0vh 5.5vh #eeebdd;}
     100%{box-shadow: 0vh 0vh 0vh #eeebdd;}
 }
 @media (min-aspect-ratio: 9/12){
