@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+body{
+    background-color: #333;
+    background-image: url("../images/background1.jpg");
+    
+    font-size:3vh;
+    color: #eeebdd;
+    /* background-color: #1b1717; */
+    font-family: 'Yesteryear', cursive;
+    overflow:hidden;
+}
+h1{
+    font-size: 15vh;
+    line-height: 19vh;
+    text-align: center;
+    font-family: 'Yesteryear', regular;
+    font-weight: 400;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    padding-bottom: 0vh;
+    text-shadow: 5px 5px 5px black;
+}
+h2{
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    text-align: center;
+}
+label{
+    font-size: 5vh;
+}
+.lower-wrapper{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content max-content;
+    grid-column-gap: 1vh;
+    justify-content: center;
+    align-content: center;
+
+}
+.wrapper{
+    text-align: center; 
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    column-gap: 2vh;
+    justify-content: center;
+}
+.chips{
+    display: inline;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    font-size: 4vh;
+    text-align: center;
+}
+.button-div{
+    text-align: center;
+}
+img{
+    height: 25vh;
+    width: 25vh;
+    box-shadow: 0pt 0pt 5pt black;
+}
+.button{
+    height: max-content;
+    font-family: 'Yesteryear',cursive;
+    border-color: #eeebdd;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4vh;
+    font-size: 4vh;
+    width: 12vw;
+    color: #eeebdd;
+    background-color: #810000;
+    text-shadow: 5pt 5pt 5pt black;
+}
+.button1{
+    height: max-content;
+    font-family: 'Yesteryear',cursive;
+    border-color: #810000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4vh;
+    font-size: 4vh;
+    width: 12vw;
+    color:  #810000;
+    background-color: #eeebdd;
+    text-shadow: 5pt 5pt 5pt black;
+}
+
+button:hover{
+
+    color: #810000;
+    background-color: #eeebdd;
+    box-shadow: 0vh 0vh 5vh #eeebdd;
+}
+.button-invisible {
+
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+.dice-roll{
+    animation-name: dice-throw;
+    animation-duration: 1s;
+}
+.button-glow{
+    animation-name: button-glow;
+    animation-duration: 2s;
+}
+@keyframes button-glow{
+    0%{box-shadow: 0vh 0vh 0vh #eeebdd;}
+    50%{box-shadow: 0vh 0vh 2vh #eeebdd;}
+    100%{box-shadow: 0vh 0vh 0vh #eeebdd;}
+}
+@keyframes dice-throw{
+    0%{box-shadow: 0px 0px 10px black;}
+    50%{box-shadow: 0px 0px 20px black;}
+    100%{box-shadow: 0px 0px 10px black;}
+}
+@keyframes make-text-grow{
+    0% {font-size: 5vh;}
+    50% {font-size: 6vh;
+        text-shadow: 0px 0px 20px #eeebdd;}
+    100% {font-size: 5vh;}
+}
+@keyframes make-text-shrink{
+    0% {font-size: 5vh;}
+    50% {font-size: 4.5vh;}
+    100% {font-size: 5vh;}
+}
+/* button,
+.button-new-game{
+    width: 10vw;
+} */
+.players{
+    font-size: 3vh;
+}
+p{
+    font-size: 10vh;
+    font-family: 'Yesteryear', cursive;
+}
+.span-grow{
+    animation-name: make-text-grow;
+    animation-duration: 2s;
+}
+.span-shrink{
+    animation-name: make-text-shrink;
+    animation-duration: 2s;
+}
+span{
+    
+    font-size: 5vh;
+}
+.space-div{
+    height: 30pt;
+}
+#chips-div{
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    box-shadow: 5pt 5pt 5pt black;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #eeebdd;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 4vh;
+    display: block;
+    
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #eeebdd;
+    color: #810000;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    font-size: 20pt;
+    background-color: #810000;
+    color: #eeebdd;
+  }
