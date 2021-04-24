@@ -15,7 +15,7 @@ h1{
     text-align: center;
     font-family: 'Yesteryear', regular;
     font-weight: 400;
-    font-size:6vh; 
+    font-size:7vh; 
     line-height: 8vh;
     margin-top: 0.5vh;
     margin-bottom: 0vh;
@@ -89,6 +89,7 @@ hr{
     justify-content: center;
 }
 .chips{
+    font-size: 5vh;
     display: inline-flex;
     white-space: nowrap;
 }
@@ -128,7 +129,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 4vh;
-    font-size: 4vh;
+    font-size: 5vh;
     width: 50vw;
     color: #eeebdd;
     background-color: #810000;
@@ -290,7 +291,7 @@ span{
   
   /* Style the active link (or home/logo) */
   .active {
-    font-size: 20pt;
+    font-size: 5vh;
     background-color: #810000;
     color: #eeebdd;
   }
