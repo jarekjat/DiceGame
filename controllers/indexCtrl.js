@@ -30,15 +30,25 @@ const players = Object.freeze({
     "Player 1": 1,
     "Player 2": 2
 })
-const subtitle = document.getElementsByTagName("h2")[0]
-const fun = setInterval(buttonGlow,2000) 
-
-
-window.addEventListener("load",()=> fun)
+const subtitle = document.getElementsByTagName("h2")[0];
+let counter = 0
 function buttonGlow(){
+    if(counter>=1)
     buttonRoll.classList.remove("button-glow")
     buttonRoll.classList.add("button-glow")
+    counter++
+    console.log(buttonRoll.classList)
+    console.log("buttonGLow")
 }
+(()=>{
+    buttonRoll.classList.add("button-glow")
+})()
+//(function(){
+   // window.setInterval(buttonGlow,2500) 
+//})()
+
+// window.addEventListener("load",()=> fun)
+
 buttonRoll.addEventListener("click",()=>{
     if(buttonRoll.textContent === newGameHtmlText){
         startNewGame()

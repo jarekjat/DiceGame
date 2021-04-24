@@ -4,7 +4,7 @@ body{
     background-color: #333;
     background-image: url("../images/background1.jpg");
     
-    font-size:1.5vh;
+    font-size:3vh;
     color: #eeebdd;
     /* background-color: #1b1717; */
     font-family: 'Yesteryear', cursive;
@@ -39,22 +39,48 @@ label{
     font-size: 5vh;
 }
 .lower-wrapper{
-    display: grid;
+    position:absolute;
+    left: 50%;
+    right: 50%;
+    top: 80vh;
+    display: flex;
     grid-template-columns: max-content max-content max-content max-content;
     grid-column-gap: 1vh;
     justify-content: center;
     align-content: center;
 }
-@media (min-aspect-ratio: 9/12){
-.lower-wrapper{
-    display: flex;
-    justify-content: center;
-}
 hr{
     visibility: hidden;
 }
+@media (min-aspect-ratio: 9/12){
+    .lower-wrapper{
+        left: 50%;
+        right: 50%;
+        top: 85vh;
+        display: flex;
+        justify-content: center;
+    }
+    }
+.first-lower-wrapper{
+    display: inline-flex;
+    left: 50%;
+    right: 50%;
+    top: 68vh;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: max-content max-content;
+    position: absolute;
+    grid-column-gap: 1vh;
+}
+@media (min-aspect-ratio: 9/12) {
+    .first-lower-wrapper{
+        top: 75vh;
+    }
 }
 .wrapper{
+    left: 50%;
+    right: 50%;
+    position: absolute;
     text-align: center; 
     display: grid;
     grid-template-columns: max-content max-content;
@@ -63,11 +89,20 @@ hr{
     justify-content: center;
 }
 .chips{
-    display: inline;
+    display: inline-flex;
+    white-space: nowrap;
 }
 footer{
+    position: absolute;
+    top: 87vh;
     font-size: 4vh;
     text-align: center;
+}
+@media (min-aspect-ratio: 9/12){
+    footer{
+        position: relative;
+    top: 45vh;
+    }
 }
 .button-div{
     text-align: center;
@@ -79,11 +114,13 @@ img{
 }
 @media (min-aspect-ratio: 9/12){
     img{
-        height: 25vh;
-        width: 25vh; 
+        height: 28vh;
+        width: 28vh; 
     }
 }
 .button{
+    white-space: nowrap;
+    display: inline-block;
     height: max-content;
     font-family: 'Yesteryear',cursive;
     border-color: #eeebdd;
@@ -92,7 +129,7 @@ img{
     margin-right: auto;
     border-radius: 4vh;
     font-size: 4vh;
-    width: 12vw;
+    width: 50vw;
     color: #eeebdd;
     background-color: #810000;
     text-shadow: 5pt 5pt 5pt black;
@@ -106,13 +143,12 @@ img{
     margin-right: auto;
     border-radius: 4vh;
     font-size: 4vh;
-    width: 12vw;
+    width: 28vw;
     color:  #810000;
     background-color: #eeebdd;
     text-shadow: 5pt 5pt 5pt black;
 }
 button:hover{
-
     color: #810000;
     background-color: #eeebdd;
     box-shadow: 0vh 0vh 5vh #eeebdd;
@@ -129,18 +165,47 @@ button:hover{
 }
 .button-glow{
     animation-name: button-glow;
-    animation-duration: 2s;
+    animation: button-glow 4s infinite;
 }
 @keyframes button-glow{
     0%{box-shadow: 0vh 0vh 0vh #eeebdd;}
     50%{box-shadow: 0vh 0vh 2vh #eeebdd;}
     100%{box-shadow: 0vh 0vh 0vh #eeebdd;}
 }
-@keyframes dice-throw{
-    0%{box-shadow: 0px 0px 10px black;}
-    50%{box-shadow: 0px 0px 28px black;}
-    100%{box-shadow: 0px 0px 10px black;}
+@media (min-aspect-ratio: 9/12){
+    @keyframes dice-throw{
+        0%{box-shadow: 0px 0px 10px black;
+            width: 28vh;
+            height: 28vh;}
+        50%{box-shadow: 0px 0px 28px black;
+            width: 32vh;
+            height: 32vh;
+            }
+        100%{box-shadow: 0px 0px 10px black;
+            width: 28vh;
+            height: 28vh;}
+    }
 }
+@media (max-aspect-ratio: 9/12){
+    @keyframes dice-throw{
+        
+        0%{box-shadow: 0px 0px 10px black;
+            height: 45vw;
+            width: 45vw;
+            /* position: absolute;} */}
+            
+        50%{box-shadow: 0px 0px 28px black;
+            height: 48vw;
+            width: 48vw;
+            /* position: absolute; */
+            }
+        100%{box-shadow: 0px 0px 10px black;
+        height: 45vw;
+        height: 45vw;
+        /* position: absolute;} */}
+    }
+}
+
 @keyframes make-text-grow{
     0% {font-size: 5vh;}
     50% {font-size: 6vh;
@@ -179,6 +244,7 @@ span{
     height: 30pt;
 }
 #chips-div{
+    display: inline-flex;
     padding-right: 2vh;
     padding-left: 2vh;
 }
