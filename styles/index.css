@@ -2,7 +2,7 @@
 
 body{
     background-color: #333;
-    background-image: url("../images/background1.jpg");
+    background-image: url("../images/textile3.png");
     
     font-size:3vh;
     color: #eeebdd;
@@ -38,6 +38,7 @@ h2{
 }
 label{
     font-size: 5vh;
+    text-shadow: 5px 5px 5px black;
 }
 .lower-wrapper{
     position:absolute;
@@ -91,6 +92,7 @@ hr{
 }
 .chips{
     font-size: 5vh;
+    text-shadow: 5px 5px 5px black;
     display: inline-flex;
     white-space: nowrap;
 }
@@ -99,11 +101,12 @@ footer{
     top: 87vh;
     font-size: 4vh;
     text-align: center;
+    text-shadow: 5px 5px 5px black;
 }
 @media (min-aspect-ratio: 9/12){
     footer{
         position: relative;
-    top: 45vh;
+    top: 46.5vh;
     }
 }
 .button-div{
@@ -222,6 +225,7 @@ button:hover{
 } */
 .players{
     font-size: 3vh;
+    text-shadow: 5px 5px 5px black;
 }
 p{
     font-size: 10vh;
