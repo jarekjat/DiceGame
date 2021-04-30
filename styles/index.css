@@ -102,11 +102,13 @@ footer{
     font-size: 4vh;
     text-align: center;
     text-shadow: 5px 5px 5px black;
+    visibility: hidden;
 }
 @media (min-aspect-ratio: 9/12){
     footer{
         position: relative;
     top: 46.5vh;
+    visibility: visible;
     }
 }
 .button-div{
