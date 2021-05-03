@@ -6,7 +6,6 @@ body{
     
     font-size:3vh;
     color: #eeebdd;
-    /* background-color: #1b1717; */
     font-family: 'Yesteryear', cursive;
     overflow:hidden;
 }
@@ -221,10 +220,6 @@ button:hover{
     50% {font-size: 4.5vh;}
     100% {font-size: 5vh;}
 }
-/* button,
-.button-new-game{
-    width: 10vw;
-} */
 .players{
     font-size: 3vh;
     text-shadow: 5px 5px 5px black;
@@ -255,20 +250,15 @@ span{
 }
 
 
-/* Style the navigation menu */
 .topnav {
     overflow: hidden;
     background-color: #333;
     position: relative;
     box-shadow: 5pt 5pt 5pt black;
   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
-  
-  /* Style navigation menu links */
   .topnav a {
     color: #eeebdd;
     padding: 14px 16px;
@@ -277,8 +267,6 @@ span{
     display: block;
     
   }
-  
-  /* Style the hamburger menu */
   .topnav a.icon {
     background: #333;
     display: block;
@@ -286,14 +274,10 @@ span{
     right: 0;
     top: 0;
   }
-  
-  /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #eeebdd;
     color: #810000;
   }
-  
-  /* Style the active link (or home/logo) */
   .active {
     font-size: 5vh;
     background-color: #810000;

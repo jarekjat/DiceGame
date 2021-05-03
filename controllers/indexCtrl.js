@@ -1,5 +1,3 @@
-//const setDices = require("../models/indexModel.js")
-import Model from '../models/indexModel.js'
 
 let chipsBalance = 1000
 
@@ -43,11 +41,6 @@ function buttonGlow(){
 (()=>{
     buttonRoll.classList.add("button-glow")
 })()
-//(function(){
-   // window.setInterval(buttonGlow,2500) 
-//})()
-
-// window.addEventListener("load",()=> fun)
 
 buttonRoll.addEventListener("click",()=>{
     if(buttonRoll.textContent === newGameHtmlText){
