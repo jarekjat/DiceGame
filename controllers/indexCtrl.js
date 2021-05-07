@@ -1,4 +1,3 @@
-
 let chipsBalance = 1000
 
 const buttonRoll = document.getElementsByName("buttonRoll")[0]
@@ -13,6 +12,7 @@ let chosenNumberOfRolls = 1
 let whoWins = ""
 let sumFirstPlayer = 0;
 let sumSecondPlayer = 0;
+const divChooseNumberOfRolls = document.getElementById("chooseNumberOfRolls")
 const img1 = document.getElementById("dice1img")
 const img2 = document.getElementById("dice2img")
 const player1 = "Player 1"
@@ -42,6 +42,13 @@ function buttonGlow(){
     buttonRoll.classList.add("button-glow")
 })()
 
+divChooseNumberOfRolls.addEventListener("click",()=>{
+    let linksDiv = document.getElementById("numberChoosingLinks");
+        if (linksDiv.style.display === "block") linksDiv.style.display = "none";
+        else linksDiv.style.display = "block";
+            
+})
+
 buttonRoll.addEventListener("click",()=>{
     if(buttonRoll.textContent === newGameHtmlText){
         startNewGame()
@@ -63,8 +70,8 @@ betAmountInput.addEventListener("change",function(){
         this.value = 0
         return
     } 
-    if(this.value > Number(chipsOutput.textContent)){
-        this.value = Number(chipsOutput.textContent)
+    if(this.value > +chipsOutput.textContent){
+        this.value = +chipsOutput.textContent
         return
     } 
     if(this.value === "") this.value = 0
@@ -83,8 +90,8 @@ function startNewGame(){
     document.getElementsByTagName("h1")[0].innerText = "Dicee"
 }
 function handleBetStart(){
-    if(Number(chipsOutput.textContent) <= 0) disableBetting()
-    betAmount = Number(betAmountInput.value)
+    if(+chipsOutput.textContent <= 0) disableBetting()
+    betAmount = +betAmountInput.value
     betAmountInput.disabled = true
     onWhichPlayerBetting = onWhichPlayerBettingSubmit.value
     onWhichPlayerBettingSubmit.disabled = true

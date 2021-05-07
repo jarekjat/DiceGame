@@ -15,10 +15,10 @@
 </head>
 <body>
 
-<div href="javascript:void(0);"  class="topnav" onclick="myFunction()">
+<div id="chooseNumberOfRolls" href="javascript:void(0);"  class="topnav">
     <a class="active">How many dice rolls?</a>
 
-    <div id = "myLinks">
+    <div id="numberChoosingLinks">
         <div>
             <input type="radio" id="oneRoll" name="numberOfRolls" value=1 checked>
             <label for="oneRoll">One Roll</label>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" >
       <i class="fa fa-bars"></i>
     </a>
 </div>
@@ -48,9 +48,6 @@
 
 
 <div class="space-div"></div>
-
-    
-
 
 <div class="first-lower-wrapper">
     <button class="button" name="buttonRoll">New game</button>
@@ -71,16 +68,6 @@
         </div>
         
         <script src="../controllers/indexCtrl.js" type="module"></script>
-        <script type="text/javascript">
-        function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-        </script>
         <br>
 </body>
 <footer>In order to set number of rolls in a single game - click on the upper bar!</footer>
